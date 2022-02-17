@@ -1,0 +1,230 @@
+:root {
+  --main-black: #212121;
+  --highlight-color: #2196f3;
+  --white-color: #ffffff;
+  --main-text-color: #757575;
+}
+
+/*Загальна стилізація сторінки*/
+body {
+  background-color: var(--white-color);
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+/*Стилізвція лого*/
+.header-logo {
+  color: var(--main-black);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-blue {
+  color: var(--highlight-color);
+}
+
+/*Стилізвція навігації*/
+.site-nav .link {
+  color: var(--main-black);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--highlight-color);
+}
+
+/*Стилізвція контактів в хедері (пошта, тел)*/
+.contacts .mail-phone {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .mail-phone:hover,
+.contacts .mail-phone:focus {
+  color: var(--highlight-color);
+}
+
+/*Стилізвція основної частини (Секцій)*/
+
+/*Стилізвція Герой */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-button {
+  background-color: var(--highlight-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--white-color);
+  color: var(--highlight-color);
+}
+
+/*Стилізвція секції Наши преимущества */
+.advantages-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.advantages-subject {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.advantages-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*Стилізвція секції Чем мы занимаемся */
+.activity-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/*Стилізвція секції Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.team-name {
+  color: var(--main-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/*Стилізвція Підвалу */
+.page-footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.contact .address {
+  font-style: normal;
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contact .address:hover,
+.contact .address:focus {
+  color: var(--highlight-color);
+}
+
+.contact .contact-content {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contact .contact-content:hover,
+.contact .contact-content:focus {
+  color: var(--highlight-color);
+}
+
+/* Стилізація СТОРІНКИ ПОРТФОЛІО */
+
+.button-list .button {
+  background-color: #f5f4fa;
+  color: var(--main-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.button-list .button:hover,
+.button-list .button:focus {
+  background-color: var(--highlight-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.examples .example-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples .example-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
