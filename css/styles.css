@@ -12,14 +12,19 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.list {
-  list-style: none;
-  padding: 0%;
-  margin: 0%;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.centered {
-  text-align: center;
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
@@ -29,6 +34,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
+}
+
+.centered {
+  text-align: center;
 }
 
 /*Стилізвція лого*/
@@ -91,7 +100,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0px;
   margin-bottom: 30px;
 }
 
@@ -109,7 +117,6 @@ body {
   padding: 10px 32px;
   min-width: 200px;
   min-height: 50px;
-  margin-bottom: 200px;
 }
 
 .hero-button:hover,
@@ -132,8 +139,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 0%;
-  margin-bottom: 0%;
 }
 
 .advantages-subject {
@@ -151,8 +156,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 /*Стилізвція секції Чем мы занимаемся */
@@ -169,7 +172,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -186,7 +188,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 0px;
   margin-bottom: 50px;
 }
 
