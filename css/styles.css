@@ -14,6 +14,12 @@ body {
 
 .list {
   list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+.centered {
+  text-align: center;
 }
 
 .container {
@@ -74,6 +80,8 @@ body {
 /*Стилізвція Герой */
 .hero {
   background-color: #2f303a;
+  outline: 2px solid tomato;
+  text-align: center;
 }
 
 .hero-title {
@@ -83,20 +91,25 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
+  display: inline-block;
   background-color: var(--highlight-color);
   color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  border: 1px solid transparent;
+  border-radius: 6px;
   cursor: pointer;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
+  margin-bottom: 200px;
 }
 
 .hero-button:hover,
@@ -106,12 +119,21 @@ body {
 }
 
 /*Стилізвція секції Наши преимущества */
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .advantages-title {
   color: var(--main-black);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .advantages-subject {
@@ -121,26 +143,41 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .advantages-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /*Стилізвція секції Чем мы занимаемся */
+
+.activity {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .activity-title {
   color: var(--main-black);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 /*Стилізвція секції Наша команда */
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   color: var(--main-black);
@@ -148,6 +185,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -208,17 +248,23 @@ body {
 
 /* Стилізація СТОРІНКИ ПОРТФОЛІО */
 
-.button-list .button {
+.button {
+  display: inline-block;
   background-color: #f5f4fa;
   color: var(--main-black);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-height: 38px;
+  text-align: center;
 }
 
-.button-list .button:hover,
-.button-list .button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--highlight-color);
   color: var(--white-color);
   cursor: pointer;
