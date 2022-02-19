@@ -36,9 +36,16 @@ p {
   outline: 2px solid tomato;
 }
 
-/*.centered {
-  text-align: center;
-}*/
+/*Стилізвція ХЕДЕРА*/
+
+.header-container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 /*Стилізвція лого*/
 .header-logo {
@@ -48,6 +55,9 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .logo-blue {
@@ -55,7 +65,19 @@ p {
 }
 
 /*Стилізвція навігації*/
-.site-nav .link {
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav :last-child {
+  margin-right: 0px;
+}
+.nav-item {
+  margin-right: 50px;
+}
+
+.site-nav-link {
   color: var(--main-black);
   text-decoration: none;
   font-weight: 500;
@@ -64,23 +86,39 @@ p {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--highlight-color);
 }
 
 /*Стилізвція контактів в хедері (пошта, тел)*/
-.contacts .mail-phone {
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts :last-child {
+  margin-right: 0px;
+}
+
+.itm {
+  margin-right: 50px;
+}
+
+.mail-phone {
   color: var(--main-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.contacts .mail-phone:hover,
-.contacts .mail-phone:focus {
+.mail-phone:hover,
+.mail-phone:focus {
   color: var(--highlight-color);
 }
 
@@ -91,6 +129,8 @@ p {
   background-color: #2f303a;
   outline: 2px solid tomato;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -127,6 +167,18 @@ p {
 }
 
 /*Стилізвція всіх інших секцій */
+.list {
+  display: flex;
+}
+
+.list :last-child {
+  margin-right: 0px;
+}
+
+.unit {
+  width: 270px;
+  margin-right: 30px;
+}
 
 /*Стилізвція секції Наши преимущества */
 .section {
