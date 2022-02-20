@@ -27,6 +27,10 @@ p {
   margin: 0px;
 }
 
+.non-visiable {
+  visibility: hidden;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -44,6 +48,7 @@ p {
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -59,7 +64,7 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin-right: 50px;
+  margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -74,11 +79,11 @@ p {
   align-items: center;
 }
 
-.site-nav :last-child {
-  margin-right: 0px;
-}
 .nav-item {
   margin-right: 50px;
+}
+.nav-item:last-child {
+  margin-right: 0px;
 }
 
 .site-nav-link {
@@ -98,16 +103,15 @@ p {
 /*Стилізвція контактів в хедері (пошта, тел)*/
 .contacts {
   display: flex;
-  align-items: center;
   margin-left: auto;
-}
-
-.contacts :last-child {
-  margin-right: 0px;
 }
 
 .itm {
   margin-right: 50px;
+}
+
+.itm:last-child {
+  margin-right: 0px;
 }
 
 .mail-phone {
@@ -144,6 +148,9 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
 }
 
@@ -170,35 +177,16 @@ p {
   color: var(--highlight-color);
 }
 
-/*Стилізвція всіх інших секцій */
-.list {
-  display: flex;
-  align-items: center;
-}
-
-.list :last-child {
-  margin-right: 0px;
-}
-
-.unit {
-  width: 270px;
-  margin-right: 30px;
-}
+/*Загальна Стилізація інших секцій */
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.unt {
-  margin-right: 30px;
-}
+/*Стилізвція Секції Наши преимущества*/
 
-.ut {
-  margin-right: 30px;
-}
-
-.section-title {
+.advantages-title {
   color: var(--main-black);
   font-weight: 700;
   font-size: 36px;
@@ -208,7 +196,21 @@ p {
   margin-bottom: 50px;
 }
 
-.section-subject {
+.advantages-list {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.advantages-item:last-child {
+  margin-right: 0px;
+}
+
+.advantages-subject {
   color: var(--main-black);
   font-weight: 700;
   font-size: 14px;
@@ -218,20 +220,83 @@ p {
   margin-bottom: 10px;
 }
 
-.section-item {
+.advantages-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-/*Стилізвція секції Наша команда */
+/*Стилізвція Секції Чем мы занимаемся*/
+
+.activity {
+  padding-top: 0px;
+}
+
+.activity-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.activity-list {
+  display: flex;
+  align-items: center;
+}
+
+.activity-item {
+  margin-right: 30px;
+}
+.activity-item:last-child {
+  margin-right: 0px;
+}
+
+.activity-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Стилізвція Секції Наша команда*/
 .team {
   background-color: #f5f4fa;
 }
 
+.team-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+}
+
+.team-item {
+  margin-right: 30px;
+}
+
+.team-item:last-child {
+  margin-right: 0px;
+}
+
 .team-image {
   display: block;
-  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -274,12 +339,18 @@ p {
   margin-bottom: 20px;
 }
 
-.contact {
-  display: inline-block;
+.conact-item {
+  margin-bottom: 9px;
+}
+.footer-contact-item {
+  margin-bottom: 9px;
 }
 
-.contact .address {
-  display: inline-block;
+.footer-contact-item:last-child {
+  margin-bottom: 0px;
+}
+
+.contact-address {
   font-style: normal;
   color: var(--white-color);
   text-decoration: none;
@@ -290,13 +361,12 @@ p {
   margin-bottom: 9px;
 }
 
-.contact .address:hover,
-.contact .address:focus {
+.contact-address:hover,
+.contact-address:focus {
   color: var(--highlight-color);
 }
 
-.contact .contact-content {
-  display: inline-block;
+.contact-content {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -305,18 +375,8 @@ p {
   letter-spacing: 0.03em;
 }
 
-.mail {
-  margin-top: 0px;
-  margin-bottom: 9px;
-}
-
-.phone {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.contact .contact-content:hover,
-.contact .contact-content:focus {
+.contact-content:hover,
+.contact-content:focus {
   color: var(--highlight-color);
 }
 
