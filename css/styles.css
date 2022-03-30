@@ -267,12 +267,6 @@ img {
   margin-right: 0px;
 }
 
-.activity-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /*Стилізвція Секції Наша команда*/
 .team {
   background-color: #f5f4fa;
@@ -299,12 +293,6 @@ img {
 
 .team-item:last-child {
   margin-right: 0px;
-}
-
-.team-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .team-text {
@@ -462,10 +450,6 @@ img {
 
 .example-img {
   width: 370px;
-  display: block;
-  max-width: 100%;
-  margin-top: 0px;
-  margin-bottom: 20px;
 }
 
 .example-title {
